@@ -23,6 +23,11 @@ html {
     padding: 0;
     list-style: none;
   }
+
+  .btn-reset {
+    background: transparent;
+    border: none;
+  }
   
   img {
     max-width: 100%;
@@ -32,6 +37,10 @@ html {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1140px;
+  }
+
+  .flex {
+    display: flex;
   }
   
   h1,
@@ -43,6 +52,16 @@ html {
   a,
   p {
     margin: 0;
+  }
+
+  @font-face {
+    font-family: "Muller";
+    src: local("MullerRegular"),
+      url("../fonts/MullerRegular.woff2") format("woff2"),
+      url("../fonts/MullerRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
   }
   
   @font-face {
@@ -61,7 +80,7 @@ html {
       url("../fonts/MullerLightItalic.woff2") format("woff2"),
       url("../fonts/MullerLightItalic.woff") format("woff");
     font-weight: 300;
-    font-style: normal;
+    font-style: italic;
     font-display: swap;
   }
 
@@ -77,20 +96,89 @@ html {
 
   @font-face {
     font-family: "Muller";
-    src: local("MullerRegular"),
-      url("../fonts/MullerRegular.woff2") format("woff2"),
-      url("../fonts/MullerRegular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Muller";
     src: local("MullerRegularItalic"),
       url("../fonts/MullerRegularItalic.woff2") format("woff2"),
       url("../fonts/MullerRegularItalic.woff") format("woff");
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
     font-display: swap;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .header__top-container {
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    min-height: 80px;
+  }
+
+  .header__top-logo {
+    font-size: 0;
+  }
+
+  .header__top-block {
+    align-items: center;
+  }
+
+  .header__top-nav-item:not(:last-child) {
+    margin-right: 58.75px;
+  }
+
+  /* .header__top-nav {
+    margin: 0 80px;
+  } */
+
+  .header__top-search {
+    font-size: 0;
+  }
+
+  .header__bottom {
+    border: 1px solid #E6E8EC;
+  }
+
+  .header__bottom-container {
+    align-items: center;
+    justify-content: space-between;
+    max-height: 58px;
+  }
+
+  .header__bottom-play {
+    align-items: center;
+  }
+
+  .header__bottom-age {
+    font-size: 0;
+  }
+
+  .podcast__item-left {
+    position: relative;
+  }
+
+  .podcast__item-date {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #E6E8EC;
+  }
+
+  .podcast__item-bg {
+    display: block;
+    height: 100%;
+    font-size: 0;
+  }
+
+  .podcast__item-right {
+    width: 100%;
+  }
+
+  .podcast__item-right-top {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .podcast__item-play {
+    font-size: 0;
   }
