@@ -27,6 +27,7 @@ html {
   .btn-reset {
     background: transparent;
     border: none;
+    cursor: pointer;
   }
   
   img {
@@ -37,6 +38,10 @@ html {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1140px;
+  }
+
+  section .container {
+    padding: 94px 15px;
   }
 
   .flex {
@@ -179,6 +184,27 @@ html {
     justify-content: space-between;
   }
 
+  /* .podcast__item-right-bottom {
+    align-items: center;
+  } */
+
   .podcast__item-play {
     font-size: 0;
+  }
+
+  .broadcast__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .guest__list {
+    column-count: 4;
+  }
+
+  .guest__card {
+    display: none;
+  }
+
+  .guest__card--active {
+    display: block;
   }
