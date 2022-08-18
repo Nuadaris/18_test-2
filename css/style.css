@@ -27,6 +27,7 @@ html {
   .btn-reset {
     background: transparent;
     border: none;
+    padding: 0;
     cursor: pointer;
   }
   
@@ -158,6 +159,14 @@ html {
     font-size: 0;
   }
 
+  .podcast__card:nth-child(n + 9) {
+    display: none;
+  }
+
+  .podcast__card--active:nth-child(n + 9) {
+    display: block;
+  }
+
   .podcast__item-left {
     position: relative;
   }
@@ -192,6 +201,10 @@ html {
     font-size: 0;
   }
 
+  .choices__list--dropdown .choices__item.is-selected {
+    display: none;
+  }
+
   .broadcast__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -207,4 +220,39 @@ html {
 
   .guest__card--active {
     display: block;
+  }
+
+  .playlist__check {
+    width: 100%;
+  }
+
+  .playlist__check-item {
+    width: 100%;
+  }
+
+  .playlist__label {
+    align-items: center;
+  }
+
+  .playlist__input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  .playlist__mark {
+    font-size: 0;
+  }
+
+  .about__textarea-box {
+    resize: none;
+  }
+
+  .about__form-submit {
+    flex-direction: column;
+  }
+
+  .about__btn {
+    align-self: flex-start;
   }
