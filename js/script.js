@@ -48,11 +48,7 @@ const swiper = new Swiper('.about__swiper', {
   loop: false,
   slidesPerView: 4,
   slidesPerGroup: 1,
-  spaceBeetwin: 30,
-  /* pagination: {
-    el: '.gallery-swiper-pagination',
-    type: 'fraction',
-  }, */
+  spaceBetween: 30,
   navigation: {
     prevEl: '.about__button-prev',
     nextEl: '.about__button-next',
