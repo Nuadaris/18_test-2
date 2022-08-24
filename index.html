@@ -106,12 +106,17 @@
           </ul>
         </nav>
         <div class="header__bottom-btns flex">
-          <button class="header__bottom-play btn-reset btn-left flex">
+          <button class="header__bottom-play btn-reset btn-left">
             <!-- div class="header__bottom-play-left" -->
-            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="play" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
                 fill="#A1A6B4" />
+            </svg>
+            <svg class="stop" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" fill="#A1A6B4"/>
+              <rect x="9" y="8" width="2" height="8" rx="1" fill="white"/>
+              <rect x="13" y="8" width="2" height="8" rx="1" fill="white"/>
             </svg>
             <!-- /div>
             <div class="header__bottom-play-right">
@@ -123,13 +128,18 @@
               </div>
             </div -->
           </button>
-          <button class="header__bottom-play btn-reset btn-right flex">
+          <button class="header__bottom-play btn-reset btn-right">
             <!-- div class="header__bottom-play-left" -->
-            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="play" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
                 fill="#A1A6B4" />
             </svg>
+            <svg class="stop" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" fill="#A1A6B4"/>
+              <rect x="9" y="8" width="2" height="8" rx="1" fill="white"/>
+              <rect x="13" y="8" width="2" height="8" rx="1" fill="white"/>
+              </svg>
             <!-- /div>
             <div class="header__bottom-play-right">
               <div class="header__bottom-play-time">
@@ -142,7 +152,7 @@
           </button>
         </div>
         <div class="header__bottom-age">
-          <img src="img/Header_age.png" alt="Возрастное ограничение">
+          <!-- img src="img/Header_age.png" alt="Возрастное ограничение" -->
         </div>
       </div>
     </div>
@@ -155,7 +165,9 @@
           Радио <em class="hero__title-italic">W-Wawe</em>
         </h1>
         <p class="hero__descr">
-          Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном
+          Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были
+          <a href="#" class="hero__descr-link" aria-label="Перейти на сайт издания">изданием</a>, 
+          а&nbsp;теперь пробуем себя в&nbsp;разоворном
           жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого
           эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
         </p>
@@ -195,7 +207,7 @@
                       Дмитрий Гутенберг
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -257,7 +269,7 @@
                       Дмитрий Гутенберг
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -319,7 +331,7 @@
                       Анна Васильева
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -381,7 +393,7 @@
                       Пётр Дмитриевский
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -443,7 +455,7 @@
                       Пётр Дмитриевский
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -505,7 +517,7 @@
                       Татьяна Флеганова
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -567,7 +579,7 @@
                       Пётр Дмитриевский
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -629,7 +641,7 @@
                       Татьяна Флеганова
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -691,7 +703,7 @@
                       Дмитрий Гутенберг
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -753,7 +765,7 @@
                       Дмитрий Гутенберг
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -815,7 +827,7 @@
                       Анна Васильева
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -877,7 +889,7 @@
                       Пётр Дмитриевский
                     </div>
                   </div>
-                  <div class="podcast__item-play">
+                  <div class="podcast__item-play" tabindex="0">
                     <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                       <path
@@ -1079,7 +1091,7 @@
       </div>
     </section>
 
-    <section class="guest" id="guest">
+    <section class="guest">
       <div class="container guest__container">
         <h2 class="section-title guest__title">
           Гости
@@ -1093,7 +1105,7 @@
         </p>
         <div class="guest__block flex">
           <ul class="guest__group list-reset accordion" id="accordion">
-            <li class="guest__item">
+            <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
                 <h3 class="section-subtitle guest__subtitle">
                   Блогеры
@@ -1153,7 +1165,7 @@
                 </ul>
               </div>
             </li>
-            <li class="guest__item">
+            <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
                 <h3 class="section-subtitle guest__subtitle">
                   Арт-критики
@@ -1213,7 +1225,7 @@
                 </ul>
               </div>
             </li>
-            <li class="guest__item">
+            <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
                 <h3 class="section-subtitle guest__subtitle">
                   Художники
@@ -1273,7 +1285,7 @@
                 </ul>
               </div>
             </li>
-            <li class="guest__item">
+            <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
                 <h3 class="section-subtitle guest__subtitle">
                   Люди науки
@@ -1333,7 +1345,7 @@
                 </ul>
               </div>
             </li>
-            <li class="guest__item">
+            <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
                 <h3 class="section-subtitle guest__subtitle">
                   Историки
@@ -1393,7 +1405,7 @@
                 </ul>
               </div>
             </li>
-            <li class="guest__item">
+            <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
                 <h3 class="section-subtitle guest__subtitle">
                   Филологи
@@ -1495,7 +1507,7 @@
                 Эфиры с&nbsp;гостем
               </button>
             </div>
-            <div class="guest__card guest__card--active" data-target="notarget">
+            <div class="guest__card guest__card--active" data-target="notarget" id="guest">
               <picture>
                 <source srcset="img/Guest_X.png" media="(max-width: 1200px)">
                 <img src="img/Guest_X.png" alt="Тут будет фото гостя">
