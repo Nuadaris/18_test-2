@@ -320,7 +320,7 @@ html {
     left: 7%;
   }
 
-  .play {
+  .btn-left .stop--active, .btn-right .stop--active {
     opacity: 1;
   }
 
@@ -532,6 +532,8 @@ html {
 
   .podcast__item-play {
     outline: none;
+    width: 48px;
+    height: 60px;
   }
 
   .podcast__item-play circle {
@@ -570,6 +572,26 @@ html {
   }
 
   .podcast__item-play:active path {
+    fill: var(--main-dk);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .podcast__item-play rect {
+    fill: var(--grey-dk);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .podcast__item-play:hover rect {
+    fill: var(--main);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .podcast__item-play:focus-visible rect {
+    fill: var(--main-lt);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .podcast__item-play:active rect {
     fill: var(--main-dk);
     transition: fill 0.3s ease-in-out;
   }
@@ -616,6 +638,7 @@ html {
   }
 
   .podcast__item-right-top {
+    position: relative;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
@@ -644,9 +667,20 @@ html {
     color: var(--grey-dk);
   }
 
-  .podcast__item-play {
+  .podcast__item-play svg {
+    position: absolute;
+    top: 5px;
+    right: 0;
     font-size: 0;
     cursor: pointer;
+  }
+
+  .podcast__item-play--active .pause {
+    opacity: 1;
+  }
+
+  .pause, .podcast__item-play--active .start {
+    opacity: 0;
   }
 
   .podcast__item-right-bottom svg {
