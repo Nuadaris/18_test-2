@@ -261,7 +261,8 @@ html {
   }
 
   .header__bottom {
-    border: 1px solid #E6E8EC;
+    border-top: 1px solid #E6E8EC;
+    border-bottom: 1px solid #E6E8EC;
     max-height: 60px;
   }
 
