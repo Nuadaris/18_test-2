@@ -64,10 +64,13 @@ document.querySelector('.btn-right').addEventListener('click', function () {
 });
 
 let podcastPlay = document.querySelectorAll('.podcast__item-play');
-    podcastPlay.forEach(function(el) {
-      el.addEventListener('click', function(ev) {
-        ev.stopPropagation();
-        podcastPlay.forEach(el => { if (el != this) { el.classList.remove('podcast__item-play--active') }; });
-        this.classList.toggle('podcast__item-play--active');
+  podcastPlay.forEach(function(el) {
+    el.addEventListener('click', function(ev) {
+      podcastPlay.forEach(el => {
+        if (el != this) {
+          el.classList.remove('podcast__item-play--active')
+        };
+      });
+    this.classList.toggle('podcast__item-play--active');
   });
 });
