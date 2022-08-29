@@ -204,6 +204,21 @@ html {
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
 
+  .header__top-form {
+    position: relative;
+  }
+
+  .header__top-input {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 24px;
+    width: 0;
+    border: none;
+    border-bottom: 1px solid transparent;
+    /* width: 308px; */
+  }
+
   .header__top-search {
     font-size: 0;
     margin-right: 21px;
@@ -417,7 +432,7 @@ html {
   .hero__container {
     background: url(../img/Hero_bg-xl.png);
     background-repeat: no-repeat;
-    background-size: 30%;
+    background-size: 32%;
     background-position: right;
   }
 
@@ -1534,6 +1549,20 @@ html {
 
   .playlist__card-top {
     max-height: 160px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .playlist__card-top::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 28%;
+    background: var(--black);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .playlist__card::before {
@@ -1552,7 +1581,7 @@ html {
     width: 48px;
     height: 48px;
     content: "";
-    background: url(../img/playlist_btn.svg);
+    background-image: url(../img/playlist_btn.svg);
     z-index: 1;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -1615,6 +1644,58 @@ html {
     transition: color 0.3s ease-in-out;
   }
 
+  .playlist__card:hover .playlist__card-top::after {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .playlist__card:focus-visible.playlist__card::after {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .playlist__card:focus-visible .playlist__card-bottom {
+    background-color: var(--main-lt);
+    border: 1px solid var(--main-lt);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlist__card:focus-visible:not(:hover) .playlist__card-descr {
+    color: var(--black);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .playlist__card:focus-visible .playlist__card-top::after {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .playlist__card:active.playlist__card::after {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .playlist__card:active .playlist__card-bottom {
+    background-color: var(--main-dk);
+    border: 1px solid var(--main-dk);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlist__card:active .playlist__card-name {
+    color: var(--white);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .playlist__card:active .playlist__card-descr {
+    color: var(--white);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .playlist__card:active .playlist__card-top::after {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+
   .promo {
     background-color: var(--black-lt);
   }
@@ -1632,6 +1713,7 @@ html {
 
   .promo__new {
     position: absolute;
+    animation-duration: 0.5s;
   }
 
   .promo__right {
@@ -1668,7 +1750,7 @@ html {
   }
 
   .promo__btn {
-    background: transparent;
+    background-color: transparent;
     border: 2px solid var(--sand);
     font-weight: 500;
     font-size: 20px;
@@ -1676,6 +1758,61 @@ html {
     color: var(--sand);
     border-radius: 100px;
     padding: 20px 12px;
+    outline: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .promo__btn svg {
+    margin-right: 7px;
+  }
+
+  .promo__btn:hover {
+    background-color: var(--sand);
+    color: var(--black);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+
+  .promo__btn path.outer {
+    fill: var(--sand);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .promo__btn:hover path.outer {
+    fill: var(--black);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .promo__btn path.inner {
+    fill: var(--black);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .promo__btn:hover path.inner {
+    fill: var(--sand);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .promo__btn:focus-visible {
+    background-color: var(--sand-dk);
+    color: var(--black);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+
+  .promo__btn:active {
+    border: 2px solid var(--sand-dk);
+    background-color: var(--sand-dk);
+    color: var(--black);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .promo__btn:active path.outer {
+    fill: var(--black);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .promo__btn:active path.inner {
+    fill: var(--sand-dk);
+    transition: fill 0.3s ease-in-out;
   }
 
   .about {
