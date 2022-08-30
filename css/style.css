@@ -214,9 +214,18 @@ html {
     right: 100%;
     height: 24px;
     width: 0;
+    padding: 0;
+    outline: none;
     border: none;
     border-bottom: 1px solid transparent;
-    /* width: 308px; */
+    transition: width 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  }
+
+  .header__top-input--active {
+    outline: none;
+    width: 308px;
+    border-bottom: 1px solid var(--main);
+    transition: width 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
   }
 
   .header__top-search {

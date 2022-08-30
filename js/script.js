@@ -74,3 +74,10 @@ let podcastPlay = document.querySelectorAll('.podcast__item-play');
     this.classList.toggle('podcast__item-play--active');
   });
 });
+
+let searchBtn = document.querySelector('.header__top-search');
+let searchInput = document.querySelector('.header__top-input');
+
+searchBtn.addEventListener('click', function () {
+  searchInput.classList.toggle('header__top-input--active');
+});
