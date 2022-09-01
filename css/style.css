@@ -292,7 +292,6 @@ html {
 
   .header__bottom-container {
     align-items: center;
-    /* justify-content: space-between; */
     min-height: 60px;
   }
 
@@ -1239,13 +1238,14 @@ html {
     padding: 20px 0;
     border-bottom: 1px solid var(--grey-dk);
     outline: none;
-    background: transparent;
-    transition: border-bottom 0.3s ease-in-out;
+    background-color: transparent;
+    transition: border-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
 
   .guest__item-top svg {
+    fill: none;
     transform: rotate(0deg);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
   }
 
   .ui-state-active svg {
@@ -1290,7 +1290,23 @@ html {
   }
 
   .guest__item:focus-visible {
-    background: var(--black-lt);
+    background-color: var(--black-lt);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .guest__item:focus-visible svg {
+    fill: var(--main-dk);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .guest__item-top:active svg {
+    fill: var(--main-lt);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .guest__item-top:active path {
+    stroke: var(--white);
+    transition: stroke 0.3s ease-in-out;
   }
 
   .guest__list {
@@ -1890,6 +1906,12 @@ html {
     display: none;
   }
 
+  .about__button-prev,
+  .about__button-next {
+    outline: none;
+    cursor: default;
+  }
+
   .about__button-prev::before {
     content: "";
     position: absolute;
@@ -1898,6 +1920,7 @@ html {
     width: 48px;
     height: 48px;
     background: url(../img/About_prev.svg);
+    cursor: pointer;
   }
   
   .about__button-next::before {
@@ -1908,6 +1931,7 @@ html {
     width: 48px;
     height: 48px;
     background: url(../img/About_next.svg);
+    cursor: pointer;
   }
 
   .about__middle {
@@ -1928,26 +1952,68 @@ html {
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    color: var(--grey-dk);
+    color: var(--white);
     padding: 30px;
-    background: transparent;
+    outline: none;
+    background-color: transparent;
     border: 1px solid var(--white);
     border-radius: 30px;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .about__textarea-box:hover {
+    background-color: var(--black-lt);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .about__textarea-box:focus-visible {
+    background-color: var(--black-lt);
+    border: 1px solid var(--main-lt);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .about__textarea-box:active {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .about__form-label {
+    position: relative;
   }
 
   .about__form-box {
     width: 100%;
     height: 100%;
     min-width: 445px;
-    min-height: 70px;
+    max-height: 70px;
     background: transparent;
+    outline: none;
     border: 1px solid var(--white);
     border-radius: 40px;
     padding: 24px 32px;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    color: var(--grey-dk);
+    color: var(--white);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .about__form-box:hover {
+    background-color: var(--black-lt);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .about__form-box:focus-visible {
+    background-color: var(--black-lt);
+    border: 1px solid var(--main-lt);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .about__form-box:active {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
   }
 
   .about__form-submit {
@@ -1961,9 +2027,29 @@ html {
     line-height: 20px;
     color: var(--white);
     padding: 25px 54px;
-    background: var(--main);
+    outline: none;
+    border: 2px solid transparent;
+    background-color: var(--main);
     border-radius: 40px;
     margin-bottom: 33px;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .about__btn:hover {
+    background-color: var(--main-lt);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .about__btn:focus-visible {
+    background-color: var(--main-lt);
+    border: 2px solid var(--main-dk);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .about__btn:active {
+    background-color: var(--main-dk);
+    border: 2px solid var(--main-dk);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
   }
 
   .about__form-agreement {
@@ -1988,14 +2074,45 @@ html {
     width: 14px;
     height: 14px;
     border: 1px solid var(--white);
-    background: transparent;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     outline: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .about__form-agreement:hover .about__form-checkmark {
+    background-color: var(--main);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .about__form-agreement:focus-visible .about__form-checkmark {
+    background-color: var(--main-lt);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .about__form-agreement:active .about__form-checkmark {
+    background-color: var(--main-dk);
+    transition: background-color 0.3s ease-in-out;
   }
 
   .about__form-agreement input:checked ~ .about__form-checkmark {
     background-image: url(../img/About_check.svg);
+  }
+
+  .just-validate-error-field:not(:active) {
+    position: relative;
+    border: 1px solid #D52B1E;
+  }
+
+  .just-validate-error-label {
+    position: absolute;
+    top: 12%;
+    left: 7%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #D52B1E;
   }
 
   .footer {
@@ -2016,6 +2133,31 @@ html {
     justify-content: space-between;
   }
 
+  .footer__top-left-link {
+    outline: none;
+    font-size: 0;
+  }
+
+  .footer__top-left-link path {
+    fill: var(--grey);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .footer__top-left-link:hover path {
+    fill: var(--main);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .footer__top-left-link:focus-visible path {
+    fill: var(--main-lt);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .footer__top-left-link:active path {
+    fill: var(--main-dk);
+    transition: fill 0.3s ease-in-out;
+  }
+
   .footer__top-right {
     max-width: 445px;
     max-height: 88px;
@@ -2032,7 +2174,29 @@ html {
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .footer__top-link {
+    outline: none;
     color: var(--white);
+    padding: 2px;
+    background-color: transparent;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+
+  .footer__top-link:hover {
+    color: var(--main);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .footer__top-link:focus-visible {
+    background-color: var(--main-lt);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .footer__top-link:active {
+    color: var(--main-dk);
+    transition: color 0.3s ease-in-out;
   }
 
   .footer__bottom {

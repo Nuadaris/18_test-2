@@ -45,7 +45,7 @@ const btnClose = document.querySelector('.show-more');
 
 const swiper = new Swiper('.about__swiper', {
   direction: 'horizontal',
-  loop: false,
+  loop: true,
   slidesPerView: 4,
   slidesPerGroup: 1,
   spaceBetween: 30,
@@ -81,3 +81,84 @@ let searchInput = document.querySelector('.header__top-input');
 searchBtn.addEventListener('click', function () {
   searchInput.classList.toggle('header__top-input--active');
 });
+
+let burger = document.querySelector('.burger');
+let menu = document.querySelector('.header__top-nav-list');
+let menuLinks = menu.querySelectorAll('.header__top-nav-link');
+
+burger.addEventListener('click',
+    function () {
+        burger.classList.toggle('burger--active');
+
+        menu.classList.toggle('header__top-nav-list--active');
+
+        document.body.classList.toggle('stop-scroll');
+});
+
+menuLinks.forEach(function (element) {
+    element.addEventListener('click', function () {
+        burger.classList.remove('burger--active');
+
+        menu.classList.remove('header__top-nav-list--active');
+
+        document.body.classList.remove('stop-scroll');
+    });
+});
+
+var selector = document.querySelector("input[type='mail']");
+var im = new Inputmask("*@*.a");
+
+im.mask(selector);
+
+im.mask({
+  mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+  greedy: false,
+  onBeforePaste: function (pastedValue, opts) {
+    pastedValue = pastedValue.toLowerCase();
+    return pastedValue.replace("mailto:", "");
+  },
+  definitions: {
+    '*': {
+      validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+      casing: "lower",
+    }
+  }
+});
+
+const validate = new window.JustValidate('#about__form');
+
+const validation = new JustValidate('#about__form');
+
+validation
+  .addField('#name', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы&nbsp;не&nbsp;ввели имя',
+    },
+    {
+      rule: 'customRegexp',
+      value: "[a-zA-Zа-яА-Я]",
+      errorMessage: 'Недопустимые символы',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Имя слишком короткое',
+    },
+    {
+      rule: 'maxLength',
+      value: 15,
+      errorMessage: 'Имя слишком длинное',
+    },
+  ])
+
+  .addField('#email', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы&nbsp;не&nbsp;ввели e-mail!',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Вы&nbsp;не&nbsp;ввели e-mail!',
+    },
+  ]);

@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/choices.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css.map">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -2093,7 +2092,7 @@
           </div>
         </div>
         <div class="about__bottom">
-          <form class="about__form" action="#" autocomplete="off" id="about__form">
+          <form class="about__form" action="#" autocomplete="off" id="about__form" method="post" aria-label="Контактные данные">
             <div class="about__form-input">
               <label class="about__textarea" for="textarea">
                 <textarea class="about__textarea-box" name="textarea" id="textarea" placeholder="Что скажете?"></textarea>
@@ -2101,18 +2100,18 @@
             </div>
             <div class="about__form-input flex">
               <label class="about__form-label" for="name">
-                <input class="about__form-box" type="text" name="name" id="name" placeholder="Имя" required>
+                <input class="about__form-box" type="text" name="name" id="name" placeholder="Имя">
               </label>
               <label class="about__form-label" for="email">
-                <input class="about__form-box" type="email" name="email" id="email" data-inputmask="'alias': 'email'" placeholder="Email" required>
+                <input class="about__form-box" type="mail" name="email" id="email" data-inputmask="'alias': 'email'" placeholder="Email">
               </label>
             </div>
             <div class="about__form-submit flex">
-              <button class="about__btn btn-reset" type="submit" name="submit" aria-label="Отправить сообщение">
+              <button class="about__btn btn-reset" type="submit" name="submit" aria-label="Отправить сообщение" id="about__btn">
                 Отправить
               </button>
               <label tabindex="0" class="about__form-agreement">
-                <input class="about__form-check" type="checkbox" required>Согласен на&nbsp;обработку персональных данных
+                <input class="about__form-check" type="checkbox" id="about__form-check" required>Согласен на&nbsp;обработку персональных данных
                 <span class="about__form-checkmark"></span>
               </label>
             </div>
@@ -2225,7 +2224,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/choices.js"></script>
   <script src="js/inputmask.min.js"></script>
-  <script src="js/just-validate.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
