@@ -49,6 +49,16 @@ const swiper = new Swiper('.about__swiper', {
   slidesPerView: 4,
   slidesPerGroup: 1,
   spaceBetween: 30,
+  breakpoints: {
+    1267: {
+      slidesPerView: 4,
+    },
+
+    992: {
+      slidesPerView: 3,
+    }
+  },
+
   navigation: {
     prevEl: '.about__button-prev',
     nextEl: '.about__button-next',
@@ -105,7 +115,7 @@ menuLinks.forEach(function (element) {
     });
 });
 
-var selector = document.querySelector("input[type='mail']");
+var selector = document.querySelector("input[inputmode='email']");
 var im = new Inputmask("*@*.a");
 
 im.mask(selector);
@@ -162,3 +172,9 @@ validation
       errorMessage: 'Вы&nbsp;не&nbsp;ввели e-mail!',
     },
   ]);
+
+  const modal = new GraphModal();
+
+  document.querySelector('.header__top-enter').addEventListener('click', () => {
+    new GraphModal().open('first');
+  });

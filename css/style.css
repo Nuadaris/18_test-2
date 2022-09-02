@@ -2078,22 +2078,22 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     outline: none;
-    transition: background-color 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
   }
 
   .about__form-agreement:hover .about__form-checkmark {
-    background-color: var(--main);
-    transition: background-color 0.3s ease-in-out;
+    border: 1px solid var(--main);
+    transition: border 0.3s ease-in-out;
   }
 
   .about__form-agreement:focus-visible .about__form-checkmark {
-    background-color: var(--main-lt);
-    transition: background-color 0.3s ease-in-out;
+    border: 1px solid var(--main-lt);
+    transition: border 0.3s ease-in-out;
   }
 
   .about__form-agreement:active .about__form-checkmark {
-    background-color: var(--main-dk);
-    transition: background-color 0.3s ease-in-out;
+    border: 1px solid var(--main-dk);
+    transition: border 0.3s ease-in-out;
   }
 
   .about__form-agreement input:checked ~ .about__form-checkmark {
@@ -2218,4 +2218,79 @@ html {
 
   .reg {
     top: 50%;
+  }
+
+  .graph-modal__container {
+    width: 824px;
+    height: 655px;
+    padding: 60px;
+    border-radius: 0;
+    background-color: var(--black);
+  }
+
+  .graph-modal__close {
+    width: 42px;
+    height: 42px;
+    right: 30px;
+    top: 30px;
+  }
+
+  .graph-modal__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: var(--white);
+  }
+
+  .graph-modal__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--white);
+  }
+
+  .graph-modal__reg {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--main);
+  }
+
+  .graph-modal__form {
+    flex-direction: column;
+  }
+
+  .graph-modal__input {
+    padding: 25px 32px;
+    border-radius: 40px;
+    outline: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--grey-dk);
+    border: 1px solid var(--white);
+    background-color: transparent;
+    max-width: 526px;
+  }
+
+  .graph-modal__btn {
+    padding: 25px 54px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--white);
+    max-width: 167px;
+    background-color: var(--main);
+    border-radius: 40px;
+  }
+
+  .graph-modal__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--white);
+  }
+
+  .graph-modal__link {
+    padding-right: 30px;
   }
