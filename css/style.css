@@ -2233,6 +2233,47 @@ html {
     height: 42px;
     right: 30px;
     top: 30px;
+    outline: none;
+  }
+
+  .graph-modal__close circle {
+    stroke: var(--grey-dk);
+    transition: stroke 0.3s ease-in-out;
+  }
+
+  .graph-modal__close path {
+    stroke: var(--grey-dk);
+    transition: stroke 0.3s ease-in-out;
+  }
+
+  .graph-modal__close:hover circle {
+    stroke: var(--main);
+    transition: stroke 0.3s ease-in-out;
+  }
+
+  .graph-modal__close:hover path {
+    stroke: var(--main);
+    transition: stroke 0.3s ease-in-out;
+  }
+
+  .graph-modal__close:focus-visible circle {
+    stroke: var(--main-lt);
+    transition: stroke 0.3s ease-in-out;
+  }
+
+  .graph-modal__close:focus-visible path {
+    stroke: var(--main-lt);
+    transition: stroke 0.3s ease-in-out;
+  }
+
+  .graph-modal__close:active circle {
+    stroke: var(--main-dk);
+    transition: stroke 0.3s ease-in-out;
+  }
+
+  .graph-modal__close:active path {
+    stroke: var(--main-dk);
+    transition: stroke 0.3s ease-in-out;
   }
 
   .graph-modal__title {
@@ -2240,6 +2281,7 @@ html {
     font-size: 48px;
     line-height: 100%;
     color: var(--white);
+    margin-bottom: 17px;
   }
 
   .graph-modal__text {
@@ -2247,13 +2289,31 @@ html {
     font-size: 20px;
     line-height: 20px;
     color: var(--white);
+    margin-bottom: 30px;
   }
 
   .graph-modal__reg {
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
+    color: var(--white);
+    outline: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .graph-modal__reg:hover {
     color: var(--main);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .graph-modal__reg:focus-visible {
+    color: var(--main-lt);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .graph-modal__reg:active {
+    color: var(--main-dk);
+    transition: color 0.3s ease-in-out;
   }
 
   .graph-modal__form {
@@ -2267,10 +2327,29 @@ html {
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    color: var(--grey-dk);
+    color: var(--white);
     border: 1px solid var(--white);
     background-color: transparent;
     max-width: 526px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .graph-modal__input:hover {
+    background-color: var(--black-lt);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .graph-modal__input:focus-visible {
+    background-color: var(--black-lt);
+    border: 1px solid var(--main-lt);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .graph-modal__input:active {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
   }
 
   .graph-modal__btn {
@@ -2281,7 +2360,28 @@ html {
     color: var(--white);
     max-width: 167px;
     background-color: var(--main);
+    border: 2px solid transparent;
     border-radius: 40px;
+    outline: none;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .graph-modal__btn:hover {
+    background-color: var(--main-lt);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .graph-modal__btn:focus-visible {
+    background-color: var(--main-lt);
+    border: 2px solid var(--main);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .graph-modal__btn:active {
+    background-color: var(--main-dk);
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
   }
 
   .graph-modal__subtitle {
@@ -2289,8 +2389,52 @@ html {
     font-size: 20px;
     line-height: 20px;
     color: var(--white);
+    padding-top: 30px;
+    border-top: 1px solid rgba(230, 232, 236, 0.4);
+    margin-bottom: 30px;
   }
 
   .graph-modal__link {
-    padding-right: 30px;
+    margin-right: 40px;
+    outline: none;
+  }
+
+  .fb-icon {
+    fill: var(--grey-dk);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .fb-icon:hover {
+    fill: var(--main);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .fb-icon:focus-visible {
+    fill: var(--main-lt);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .fb-icon:active {
+    fill: var(--main-dk);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .graph-modal__link rect {
+    fill: var(--grey-dk);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .graph-modal__link:hover rect {
+    fill: var(--main);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .graph-modal__link:focus-visible rect {
+    fill: var(--main-lt);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .graph-modal__link:active rect {
+    fill: var(--main-dk);
+    transition: fill 0.3s ease-in-out;
   }
