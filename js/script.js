@@ -54,9 +54,13 @@ const swiper = new Swiper('.about__swiper', {
       slidesPerView: 4,
     },
 
-    992: {
+    1193: {
       slidesPerView: 3,
-    }
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
   },
 
   navigation: {
@@ -178,3 +182,4 @@ validation
   document.querySelector('.header__top-enter').addEventListener('click', () => {
     new GraphModal().open('first');
   });
+  

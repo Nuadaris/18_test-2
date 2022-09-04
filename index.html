@@ -30,12 +30,12 @@
             <img src="img/Header_logo-xl.png" alt="Header Logo">
           </picture>
         </div>
-        <button class="burger btn-reset">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-        </button>
         <div class="header__top-block flex">
+          <button class="burger btn-reset">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
           <nav class="nav header__top-nav">
             <ul class="header__top-nav-list list-reset flex">
               <li class="header__top-nav-item">
@@ -1613,101 +1613,104 @@
           <span class="playlist__subtitle">
             Жанр
           </span>
-          <div class="playlist__check-item">
-            <label class="playlist__label flex">
-              <input type="checkbox" class="playlist__input">
-              <span class="playlist__mark" tabindex="0">
-                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
-                </svg>
-              </span>
-              Постпанк
-            </label>
-          </div>
-          <div class="playlist__check-item">
-            <label class="playlist__label flex">
-              <input type="checkbox" class="playlist__input">
-              <span class="playlist__mark" tabindex="0">
-                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
-                </svg>
-              </span>
-              Хардкор
-            </label>
-          </div>
-          <div class="playlist__check-item">
-            <label class="playlist__label flex">
-              <input type="checkbox" class="playlist__input">
-              <span class="playlist__mark" tabindex="0">
-                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
-                </svg>
-              </span>
-              Панк-рок
-            </label>
-          </div>
-          <div class="playlist__check-item">
-            <label class="playlist__label flex">
-              <input type="checkbox" class="playlist__input">
-              <span class="playlist__mark" tabindex="0">
-                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
-                </svg>
-              </span>
-              Рок
-            </label>
-          </div>
-          <div class="playlist__check-item">
-            <label class="playlist__label flex">
-              <input type="checkbox" class="playlist__input">
-              <span class="playlist__mark" tabindex="0">
-                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
-                </svg>
-              </span>
-              Прогрессивный рок
-            </label>
-          </div>
-          <div class="playlist__check-item">
-            <label class="playlist__label flex">
-              <input type="checkbox" class="playlist__input">
-              <span class="playlist__mark" tabindex="0">
-                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
-                </svg>
-              </span>
-              Электронная музыка
-            </label>
-          </div>
-          <div class="playlist__check-item">
-            <label class="playlist__label flex">
-              <input type="checkbox" class="playlist__input">
-              <span class="playlist__mark" tabindex="0">
-                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
-                </svg>
-              </span>
-              Классическая музыка
-            </label>
-          </div>
-          <div class="playlist__check-item">
-            <label class="playlist__label flex">
-              <input type="checkbox" class="playlist__input">
-              <span class="playlist__mark" tabindex="0">
-                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
-                </svg>
-              </span>
-              Звуки природы и&nbsp;шум города
-            </label>
-          </div>
+          <form class="playlist__check-block">
+            <div class="playlist__check-item">
+              <label class="playlist__label flex">
+                <input type="checkbox" class="playlist__input">
+                <span class="playlist__mark" tabindex="0">
+                  <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
+                  </svg>
+                </span>
+                Постпанк
+              </label>
+            </div>
+            <div class="playlist__check-item">
+              <label class="playlist__label flex">
+                <input type="checkbox" class="playlist__input">
+                <span class="playlist__mark" tabindex="0">
+                  <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
+                  </svg>
+                </span>
+                Хардкор
+              </label>
+            </div>
+            <div class="playlist__check-item">
+              <label class="playlist__label flex">
+                <input type="checkbox" class="playlist__input">
+                <span class="playlist__mark" tabindex="0">
+                  <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
+                  </svg>
+                </span>
+                Панк-рок
+              </label>
+            </div>
+            <div class="playlist__check-item">
+              <label class="playlist__label flex">
+                <input type="checkbox" class="playlist__input">
+                <span class="playlist__mark" tabindex="0">
+                  <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
+                  </svg>
+                </span>
+                Рок
+              </label>
+            </div>
+            <div class="playlist__check-item">
+              <label class="playlist__label flex">
+                <input type="checkbox" class="playlist__input">
+                <span class="playlist__mark" tabindex="0">
+                  <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
+                  </svg>
+                </span>
+                Прогрессивный рок
+              </label>
+            </div>
+            <div class="playlist__check-item">
+              <label class="playlist__label flex">
+                <input type="checkbox" class="playlist__input">
+                <span class="playlist__mark" tabindex="0">
+                  <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
+                  </svg>
+                </span>
+                Электронная музыка
+              </label>
+            </div>
+            <div class="playlist__check-item">
+              <label class="playlist__label flex">
+                <input type="checkbox" class="playlist__input">
+                <span class="playlist__mark" tabindex="0">
+                  <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
+                  </svg>
+                </span>
+                Классическая музыка
+              </label>
+            </div>
+            <div class="playlist__check-item">
+              <label class="playlist__label flex">
+                <input type="checkbox" class="playlist__input">
+                <span class="playlist__mark" tabindex="0">
+                  <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
+                  </svg>
+                </span>
+                Звуки природы и&nbsp;шум города
+              </label>
+            </div>
+          </form>
         </div>
         <div class="playlist__content">
           <ul class="row playlist__list list-reset">
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card rus" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-1-sm.png" media="(max-width: 1192px)">                  
                     <source srcset="img/PLaylist-1.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-1.png" alt="Фото исполнителя">
                   </picture>
@@ -1722,10 +1725,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card rus" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-2-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-2.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-2.png" alt="Фото исполнителя">
                   </picture>
@@ -1740,10 +1744,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card rus" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-3-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-3.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-3.png" alt="Фото исполнителя">
                   </picture>
@@ -1758,10 +1763,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card rus" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-4-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-4.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-4.png" alt="Фото исполнителя">
                   </picture>
@@ -1776,10 +1782,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card rus" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-5-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-5.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-5.png" alt="Фото исполнителя">
                   </picture>
@@ -1794,10 +1801,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card rus" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-6-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-6.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-6.png" alt="Фото исполнителя">
                   </picture>
@@ -1812,10 +1820,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card eng" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-7-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-7.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-7.png" alt="Фото исполнителя">
                   </picture>
@@ -1830,10 +1839,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card eng" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-8-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-8.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-8.png" alt="Фото исполнителя">
                   </picture>
@@ -1848,10 +1858,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card eng" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-9-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-9.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-9.png" alt="Фото исполнителя">
                   </picture>
@@ -1866,10 +1877,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card eng" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-10-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-10.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-10.png" alt="Фото исполнителя">
                   </picture>
@@ -1884,10 +1896,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card eng" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-11-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-11.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-11.png" alt="Фото исполнителя">
                   </picture>
@@ -1902,10 +1915,11 @@
                 </div>
               </div>
             </li>
-            <li class="col-lg-3 playlist__item">
+            <li class="col-lg-3 col-md-4 playlist__item">
               <div class="playlist__card eng" tabindex="0">
                 <div class="playlist__card-top">
                   <picture class="playlist__bg">
+                    <source srcset="img/PLaylist-12-sm.png" media="(max-width: 1192px)">
                     <source srcset="img/PLaylist-12.png" media="(max-width: 1200px)">
                     <img src="img/PLaylist-12.png" alt="Фото исполнителя">
                   </picture>
@@ -1953,6 +1967,7 @@
               fill="#292E39" />
           </svg>
           <picture class="promo__bg">
+            <source srcset="img/Promo_radio-sm.png" media="(max-width: 1192px)">
             <source srcset="img/Promo_radio.png" media="(max-width: 1200px)">
             <img src="img/Promo_radio.png" alt="Изображение радиоприемника">
           </picture>
@@ -2007,7 +2022,7 @@
           <p class="about__text">
             Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому
             вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём!
-            Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале
+            Это&nbsp;можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале
             сайта. Спасибо! Услышимся!:)
           </p>
         </div>
@@ -2019,7 +2034,7 @@
               <div class="swiper-slide about__slide-1">
                 <div class="about__slide-top">
                   <picture>
-                    <source srcset="img/About-1.png">
+                    <source srcset="img/About-1-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-1.png" alt="Фото автора">
                   </picture>
                 </div>
@@ -2035,7 +2050,7 @@
               <div class="swiper-slide about__slide-2">
                 <div class="about__slide-top">
                   <picture>
-                    <source srcset="img/About-2.png">
+                    <source srcset="img/About-2-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-2.png" alt="Фото автора">
                   </picture>
                 </div>
@@ -2051,7 +2066,7 @@
               <div class="swiper-slide about__slide-3">
                 <div class="about__slide-top">
                   <picture>
-                    <source srcset="img/About-3.png">
+                    <source srcset="img/About-3-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-3.png" alt="Фото автора">
                   </picture>
                 </div>
@@ -2067,7 +2082,7 @@
               <div class="swiper-slide about__slide-4">
                 <div class="about__slide-top">
                   <picture>
-                    <source srcset="img/About-4.png">
+                    <source srcset="img/About-4-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-4.png" alt="Фото автора">
                   </picture>
                 </div>
@@ -2083,7 +2098,7 @@
               <div class="swiper-slide about__slide-5">
                 <div class="about__slide-top">
                   <picture>
-                    <source srcset="img/About-5.png">
+                    <source srcset="img/About-5-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-5.png" alt="Фото автора">
                   </picture>
                 </div>
@@ -2099,7 +2114,7 @@
               <div class="swiper-slide about__slide-6">
                 <div class="about__slide-top">
                   <picture>
-                    <source srcset="img/About-6.png">
+                    <source srcset="img/About-6-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-6.png" alt="Фото автора">
                   </picture>
                 </div>
