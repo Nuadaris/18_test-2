@@ -24,7 +24,7 @@
       <div class="container header__top-container flex">
         <div class="header__top-logo">
           <picture>
-            <source srcset="img/Header_logo-320.png" media="(max-width: 575px)">
+            <source srcset="img/Header_logo-320.png" media="(max-width: 710px)">
             <source srcset="img/Header_logo-768.png" media="(max-width: 1192px)">
             <source srcset="img/Header_logo-xl.png" media="(max-width: 1920px)">
             <img src="img/Header_logo-xl.png" alt="Header Logo">
@@ -98,8 +98,15 @@
           </ul>
         </nav>
         <div class="header__bottom-btns flex">
+          <button class="btn-reset btn-center">
+            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE"/>
+              <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="#FFFFFF"/>
+              <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="#FFFFFF"/>
+            </svg>
+            Что в&nbsp;эфире?
+          </button>
           <button class="header__bottom-play btn-reset btn-left">
-            <!-- div class="header__bottom-play-left" -->
             <svg class="play" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
@@ -112,18 +119,8 @@
               <rect x="9" y="8" width="2" height="8" rx="1" fill="white" />
               <rect x="13" y="8" width="2" height="8" rx="1" fill="white" />
             </svg>
-            <!-- /div>
-            <div class="header__bottom-play-right">
-              <div class="header__bottom-play-time">
-                Ранее в&nbsp;эфире
-              </div>
-              <div class="header__bottom-play-name">
-                &laquo;Музыка&raquo;
-              </div>
-            </div -->
           </button>
           <button class="header__bottom-play btn-reset btn-right">
-            <!-- div class="header__bottom-play-left" -->
             <svg class="play" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
@@ -136,19 +133,9 @@
               <rect x="9" y="8" width="2" height="8" rx="1" fill="white" />
               <rect x="13" y="8" width="2" height="8" rx="1" fill="white" />
             </svg>
-            <!-- /div>
-            <div class="header__bottom-play-right">
-              <div class="header__bottom-play-time">
-                Сейчас в&nbsp;эфире
-              </div>
-              <div class="header__bottom-play-name">
-                &laquo;Как так?&raquo;
-              </div>
-            </div -->
           </button>
         </div>
         <div class="header__bottom-age">
-          <!-- img src="img/Header_age.png" alt="Возрастное ограничение" -->
         </div>
       </div>
     </div>
@@ -179,11 +166,12 @@
           Подкасты
         </h2>
         <ul class="row podcast__list list-reset flex">
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-1.png">
+                  <source srcset="img/Podcast-1-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-1.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-1.png" alt="Podcast-1">
                 </picture>
                 <span class="podcast__item-date">
@@ -248,11 +236,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-2.png">
+                  <source srcset="img/Podcast-2-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-2.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-2.png" alt="Podcast-2">
                 </picture>
                 <span class="podcast__item-date">
@@ -317,11 +306,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-3.png">
+                  <source srcset="img/Podcast-3-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-3.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-3.png" alt="Podcast-3">
                 </picture>
                 <span class="podcast__item-date">
@@ -386,11 +376,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-4.png">
+                  <source srcset="img/Podcast-4-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-4.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-4.png" alt="Podcast-4">
                 </picture>
                 <span class="podcast__item-date">
@@ -455,11 +446,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-5.png">
+                  <source srcset="img/Podcast-5-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-5.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-5.png" alt="Podcast-5">
                 </picture>
                 <span class="podcast__item-date">
@@ -524,11 +516,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-6.png">
+                  <source srcset="img/Podcast-6-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-6.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-6.png" alt="Podcast-6">
                 </picture>
                 <span class="podcast__item-date">
@@ -593,11 +586,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-7.png">
+                  <source srcset="img/Podcast-7-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-7.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-7.png" alt="Podcast-7">
                 </picture>
                 <span class="podcast__item-date">
@@ -662,11 +656,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-8.png">
+                  <source srcset="img/Podcast-8-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-8.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-8.png" alt="Podcast-8">
                 </picture>
                 <span class="podcast__item-date">
@@ -731,11 +726,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-1.png">
+                  <source srcset="img/Podcast-1-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-1.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-1.png" alt="Podcast-1">
                 </picture>
                 <span class="podcast__item-date">
@@ -800,11 +796,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-2.png">
+                  <source srcset="img/Podcast-2-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-2.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-2.png" alt="Podcast-2">
                 </picture>
                 <span class="podcast__item-date">
@@ -869,11 +866,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-3.png">
+                  <source srcset="img/Podcast-3-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-3.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-3.png" alt="Podcast-3">
                 </picture>
                 <span class="podcast__item-date">
@@ -938,11 +936,12 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 col-md-6 podcast__card">
+          <li class="col-lg-6 col-md-6 col-sm-12 podcast__card">
             <div class="podcast__item flex">
               <div class="podcast__item-left">
                 <picture class="podcast__item-bg">
-                  <source srcset="img/Podcast-4.png">
+                  <source srcset="img/Podcast-4-320.png" media="(max-width: 710px)">
+                  <source srcset="img/Podcast-4.png" media="(max-width: 1920px)">
                   <img src="img/Podcast-4.png" alt="Podcast-4">
                 </picture>
                 <span class="podcast__item-date">
@@ -1187,7 +1186,7 @@
           <ul class="guest__group list-reset accordion" id="accordion">
             <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
-                <h3 class="section-subtitle guest__subtitle">
+                <h3 class="section-subtitle guest__item-subtitle">
                   Блогеры
                 </h3>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1247,7 +1246,7 @@
             </li>
             <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
-                <h3 class="section-subtitle guest__subtitle">
+                <h3 class="section-subtitle guest__item-subtitle">
                   Арт-критики
                 </h3>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1307,7 +1306,7 @@
             </li>
             <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
-                <h3 class="section-subtitle guest__subtitle">
+                <h3 class="section-subtitle guest__item-subtitle">
                   Художники
                 </h3>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1367,7 +1366,7 @@
             </li>
             <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
-                <h3 class="section-subtitle guest__subtitle">
+                <h3 class="section-subtitle guest__item-subtitle">
                   Люди науки
                 </h3>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1427,7 +1426,7 @@
             </li>
             <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
-                <h3 class="section-subtitle guest__subtitle">
+                <h3 class="section-subtitle guest__item-subtitle">
                   Историки
                 </h3>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1487,7 +1486,7 @@
             </li>
             <li class="guest__item" tabindex="0">
               <div class="guest__item-top flex">
-                <h3 class="section-subtitle guest__subtitle">
+                <h3 class="section-subtitle guest__item-subtitle">
                   Филологи
                 </h3>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1547,8 +1546,10 @@
             </li>
           </ul>
           <div class="guest__info">
-            <div class="guest__card" data-target="six">
+            <div class="guest__card" data-target="six" id="guest">
               <picture>
+                <source srcset="img/Guest_6-xs.png" media="(max-width: 710px)">
+                <source srcset="img/Guest_6-sm.png" media="(max-width: 960px)">
                 <source srcset="img/Guest_6.png" media="(max-width: 1200px)">
                 <img src="img/Guest_6.png" alt="Ольга Мартынова">
               </picture>
@@ -1581,7 +1582,7 @@
                   </a>
                 </li>
               </ul>
-              <h3 class="section-subtitle guest__subtitle">
+              <h3 class="section-subtitle guest__info-subtitle">
                 Ольга Мартынова
               </h3>
               <p class="guest__descr">
@@ -1593,8 +1594,10 @@
                 Эфиры с&nbsp;гостем
               </button>
             </div>
-            <div class="guest__card guest__card--active" data-target="notarget" id="guest">
+            <div class="guest__card guest__card--active" data-target="notarget">
               <picture>
+                <source srcset="img/Guest_X-xs.png" media="(max-width: 710px)">
+                <source srcset="img/Guest_X-sm.png" media="(max-width: 960px)">
                 <source srcset="img/Guest_X.png" media="(max-width: 1200px)">
                 <img src="img/Guest_X.png" alt="Тут будет фото гостя">
               </picture>
@@ -1644,7 +1647,7 @@
                     <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                   </svg>
                 </span>
-                Панк-рок
+                Панк-&nbsp;рок
               </label>
             </div>
             <div class="playlist__check-item">
@@ -1677,7 +1680,7 @@
                     <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                   </svg>
                 </span>
-                Электронная музыка
+                Электронная&nbsp;музыка
               </label>
             </div>
             <div class="playlist__check-item">
@@ -1688,18 +1691,18 @@
                     <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                   </svg>
                 </span>
-                Классическая музыка
+                Классическая&nbsp;музыка
               </label>
             </div>
             <div class="playlist__check-item">
-              <label class="playlist__label flex">
+              <label class="playlist__label label-last flex">
                 <input type="checkbox" class="playlist__input">
                 <span class="playlist__mark" tabindex="0">
                   <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                   </svg>
                 </span>
-                Звуки природы и&nbsp;шум города
+                Звуки&nbsp;природы&nbsp;и&nbsp;шум&nbsp;города
               </label>
             </div>
           </form>
@@ -1967,6 +1970,7 @@
               fill="#292E39" />
           </svg>
           <picture class="promo__bg">
+            <source srcset="img/Promo_radio-768.png" media="(max-width: 960px)">
             <source srcset="img/Promo_radio-sm.png" media="(max-width: 1192px)">
             <source srcset="img/Promo_radio.png" media="(max-width: 1200px)">
             <img src="img/Promo_radio.png" alt="Изображение радиоприемника">
@@ -1978,7 +1982,7 @@
           </h2>
           <p class="promo__text promo__text-top">
             Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что мы&nbsp;только
-            начали свой путь радиовещателей, нам хочется, чтобы&nbsp;вы&nbsp;могли как следует нас расслышать:)
+            начали свой путь радиовещателей, нам&nbsp;хочется, чтобы&nbsp;вы&nbsp;могли как следует нас расслышать:)
           </p>
           <p class="promo__text promo__text-bottom">
             Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей,
@@ -2034,6 +2038,7 @@
               <div class="swiper-slide about__slide-1">
                 <div class="about__slide-top">
                   <picture>
+                    <source srcset="img/About-1.png" media="(max-width: 960px)">
                     <source srcset="img/About-1-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-1.png" alt="Фото автора">
                   </picture>
@@ -2050,6 +2055,7 @@
               <div class="swiper-slide about__slide-2">
                 <div class="about__slide-top">
                   <picture>
+                    <source srcset="img/About-2.png" media="(max-width: 960px)">
                     <source srcset="img/About-2-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-2.png" alt="Фото автора">
                   </picture>
@@ -2066,6 +2072,7 @@
               <div class="swiper-slide about__slide-3">
                 <div class="about__slide-top">
                   <picture>
+                    <source srcset="img/About-3.png" media="(max-width: 960px)">
                     <source srcset="img/About-3-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-3.png" alt="Фото автора">
                   </picture>
@@ -2082,6 +2089,7 @@
               <div class="swiper-slide about__slide-4">
                 <div class="about__slide-top">
                   <picture>
+                    <source srcset="img/About-4.png" media="(max-width: 960px)">
                     <source srcset="img/About-4-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-4.png" alt="Фото автора">
                   </picture>
@@ -2098,6 +2106,7 @@
               <div class="swiper-slide about__slide-5">
                 <div class="about__slide-top">
                   <picture>
+                    <source srcset="img/About-5.png" media="(max-width: 960px)">
                     <source srcset="img/About-5-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-5.png" alt="Фото автора">
                   </picture>
@@ -2114,6 +2123,7 @@
               <div class="swiper-slide about__slide-6">
                 <div class="about__slide-top">
                   <picture>
+                    <source srcset="img/About-6.png" media="(max-width: 960px)">
                     <source srcset="img/About-6-sm.png" media="(max-width: 1192px)">
                     <img src="img/About-6.png" alt="Фото автора">
                   </picture>

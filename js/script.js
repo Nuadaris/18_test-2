@@ -61,6 +61,10 @@ const swiper = new Swiper('.about__swiper', {
     768: {
       slidesPerView: 2,
     },
+
+    256: {
+      slidesPerView: 2,
+    },
   },
 
   navigation: {
@@ -99,12 +103,16 @@ searchBtn.addEventListener('click', function () {
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.header__top-nav-list');
 let menuLinks = menu.querySelectorAll('.header__top-nav-link');
+let menuBottom = document.querySelector('.header__bottom-nav-list');
+let menuLinksBottom = menu.querySelectorAll('.header__bottom-nav-link');
 
 burger.addEventListener('click',
     function () {
         burger.classList.toggle('burger--active');
 
         menu.classList.toggle('header__top-nav-list--active');
+
+        menuBottom.classList.toggle('header__bottom-nav-list--active');
 
         document.body.classList.toggle('stop-scroll');
 });
@@ -115,8 +123,22 @@ menuLinks.forEach(function (element) {
 
         menu.classList.remove('header__top-nav-list--active');
 
+        menuBottom.classList.remove('header__bottom-nav-list--active');
+
         document.body.classList.remove('stop-scroll');
     });
+});
+
+menuLinksBottom.forEach(function (element) {
+  element.addEventListener('click', function () {
+      burger.classList.remove('burger--active');
+
+      menu.classList.remove('header__top-nav-list--active');
+
+      menuBottom.classList.remove('header__bottom-nav-list--active');
+
+      document.body.classList.remove('stop-scroll');
+  });
 });
 
 var selector = document.querySelector("input[inputmode='email']");
@@ -182,4 +204,20 @@ validation
   document.querySelector('.header__top-enter').addEventListener('click', () => {
     new GraphModal().open('first');
   });
-  
+
+  document.querySelector('.btn-center').addEventListener('click', function () {
+    document.querySelector('.btn-center').classList.toggle('btn-center--active')
+    document.querySelector('.btn-left').classList.toggle('btn-left--active')
+    document.querySelector('.btn-right').classList.toggle('btn-right--active')
+  });
+
+  /*document.querySelector('.playlist__check-item').addEventListener('click', function () {
+    document.querySelector('.playlist__check-item').classList.toggle('playlist__check-item--active')
+  });
+
+  //let playListLabel = document.querySelector('.playlist__label');
+  let playListBtn = document.querySelector.forEach('.playlist__check-item');
+
+  playListBtnt.addEventListener('click', function () {
+    playListBtnt.classList.toggle('playlist__check-item--active');
+  });*/
