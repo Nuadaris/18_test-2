@@ -199,7 +199,7 @@
     }
 
     .playlist__subtitle {
-        margin-bottom: 10px;
+        margin-bottom: 7px;
     }
 
     .playlist__check {
@@ -219,7 +219,7 @@
     }
 
     .playlist__content {
-        padding-top: 13px;
+        padding-top: 7px;
         margin-bottom: 38px;
     }
 
@@ -338,10 +338,18 @@
         left: 42px;
     }
 
+    .about__middle {
+        margin-bottom: 36px;
+    }
+
     .about__form-input {
         max-width: unset;
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+    }
+
+    .about__form-label:last-child {
+        margin-bottom: 6px;
     }
 
     .about__textarea-box {
@@ -584,13 +592,17 @@
         max-height: 250px;
     }
 
+    .playlist__content {
+        padding-top: 12px;
+    }
+
     .playlist__check-item:not(:last-child) {
         margin-bottom: 0;
     }
 
     .playlist__label {
         margin-bottom: 30px;
-        margin-right: 35px;
+        margin-right: 30px;
     }
 
     .container.promo__container {
@@ -600,7 +612,7 @@
 
     .promo__left {
         margin: 0;
-        margin-bottom: 45px;
+        margin-bottom: 41px;
         padding: 0;
         width: 100%;
     }
@@ -653,11 +665,15 @@
     }
 
     .about__button-prev::before {
-        bottom: 52px;
+        bottom: 54px;
     }
 
     .about__button-next::before {
-        bottom: 52px;
+        bottom: 54px;
+    }
+
+    .about__middle {
+        margin-bottom: 30px;
     }
 
     .about__textarea-box {
@@ -779,7 +795,7 @@
         position: absolute;
         visibility: hidden;
         opacity: 0;
-        top: 282px;
+        top: 281px;
         flex-direction: column;
         transform: translateX(-100%);
         width: 0;
@@ -1264,8 +1280,8 @@
         flex-wrap: nowrap;
         overflow-x: auto;
         overflow-y: hidden;
-        max-height: 35px;
-        margin-bottom: 18px;
+        max-height: 50px;
+        margin-bottom: 16px;
     }
 
     .playlist__check-item {
@@ -1274,47 +1290,265 @@
         font-size: 16px;
         line-height: 16px;
         width: 100%;
-        padding-bottom: 14px;
+        margin-bottom: 20px;
+    }
+
+    .playlist__label {
+        margin: 0;
+        display: block;
         margin-right: 15px;
         background-color: transparent;
         border: 2px solid var(--main);
         color: var(--main);
         border-radius: 77px;
         padding: 8px 19px;
-        transition: color 0.3sease-in-out, background-color 0.3sease-in-out;
     }
 
-    .playlist__label {
-        margin: 0;
-        display: block;
-        /*margin-right: 15px;
-        background-color: transparent;
-        border: 2px solid var(--main);
-        color: var(--main);
-        border-radius: 77px;
-        padding: 8px 19px;*/
-    }
-
-    .playlist__check-item--active {
+    .playlist__label--active {
         background-color: var(--main);
         color: var(--white);
-        transition: color 0.3sease-in-out, background-color 0.3sease-in-out;
     }
 
     .playlist__label.label-last {
         font-size: 14px;
         line-height: 14px;
-        padding: 0 6px;
+        padding: 8 19px;
     }
 
     .playlist__mark {
         display: none;
     }
 
-    .playlist__input:checked ~ .playlist__label {
-        background-color: var(--main);
-        color: var(--white);
-        transition: color 0.3sease-in-out, background-color 0.3sease-in-out;
+    .playlist__content {
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .playlist__list {
+        padding-top: 0;
+    }
+
+    .playlist__item {
+        max-width: 113px;
+        min-height: 159px;
+        height: 100%;
+    }
+
+    .playlist__card {
+        flex-direction: column;
+    }
+
+    .playlist__card::before {
+        left: 79%;
+    }
+
+    .playlist__card::after {
+        left: 30%;
+    }
+
+    .playlist__card-top::after {
+        right: 0;
+        bottom: 33%;
+    }
+
+    .playlist__card-bottom {
+        padding: 0;
+        padding: 9px;
+        padding-bottom: 5px;
+        min-width: unset;
+        min-height: 46px;
+    }
+
+    .playlist__card-name {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .playlist__card-descr {
+        font-size: 9px;
+        line-height: 9px;
+    }
+
+    .playlist__descr {
+        padding: 28px 0;
+        padding-bottom: 35px;
+    }
+
+    .playlist__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .playlist__copy {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .container.promo__container {
+        padding-top: 54px;
+        padding-bottom: 52px;
+    }
+
+    .promo__left {
+        margin-bottom: 32px;
+    }
+
+    .promo__new {
+        width: 25%;
+        top: unset;
+        bottom: 52%;
+    }
+
+    .promo__title {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .promo__text {
+        font-size: 14px;
+        line-height: 160%;
+        margin-bottom: 10px;
+    }
+
+    .promo__text-top {
+        background: url(../img/Promo_wave-320.png);
+        background-repeat: no-repeat;
+    }
+
+    .promo__price {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 17px;
+    }
+
+    .promo__btn {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .about {
+        background: var(--black);
+    }
+
+    .container.about__container {
+        padding: 55px 15px;
+    }
+
+    .about__top {
+        background: none;
+    }
+
+    .section-title.about__title {
+        margin-bottom: 10px;
+    }
+
+    .about__subtitle {
+        font-size: 14px;
+    }
+
+    .about__text {
+        font-size: 14px;
+        line-height: 156%;
+    }
+
+    .about__top {
+        padding-bottom: 0;
+    }
+
+    .about__button-prev::before, 
+    .about__button-next::before {
+        display: none;
+    }
+
+    .about__slide-top {
+        margin-bottom: 7px;
+    }
+
+    .about__name {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 90%;
+        margin-bottom: 4px;
+    }
+
+    .about__descr {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about__form-input {
+        margin-bottom: 23px;
+    }
+
+    .about__textarea-box {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 17px 24px;
+        border-radius: 20px;
+    }
+
+    .about__form-box {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 17px 24px;
+        min-width: unset;
+        width: 100%;
+    }
+
+    .about__form-label:last-child {
+        margin-bottom: 5px;
+    }
+
+    .about__btn {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 15px 43px;
+        margin-bottom: 23px;
+    }
+
+    .about__form-agreement {
+        font-size: 9px;
+        line-height: 9px;
+    }
+
+    .about__form-checkmark {
+        width: 13px;
+        height: 13px;
+    }
+
+    .footer__top-container {
+        padding: 54px 15px;
+        padding-bottom: 30px;
+    }
+
+    .footer__top-left {
+        max-width: 100%;
+    }
+
+    .footer__top-right {
+        max-height: 100%;
+    }
+
+    .footer__top-list {
+        columns: 2;
+        column-gap: 26px;
+        padding: 5px 0;
+    }
+
+    .footer__top-item {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 24px;
+    }
+
+    .footer__bottom {
+        background-image: url(../img/Footer_bg-320.png);
+        padding-top: 19px;
+    }
+
+    .footer__bottom-text {
+        font-size: 12px;
+        line-height: 103.34%;
     }
 
     .graph-modal__container {

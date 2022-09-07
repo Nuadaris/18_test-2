@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
   }
   
   *,
@@ -16,6 +17,7 @@ html {
   
   body {
     font-family: "Muller", sans-serif;
+    scroll-behavior: smooth;
   }
   
   .list-reset {
@@ -1333,7 +1335,7 @@ html {
   .guest__list {
     column-count: 4;
     padding: 28px 0;
-    padding-bottom: 10px;
+    padding-bottom: 17px;
   }
 
   .guest__card {
@@ -1345,6 +1347,7 @@ html {
     font-size: 20px;
     line-height: 20px;
     color: var(--white);
+    margin-bottom: 9px;
   }
 
   .guest__card img {
@@ -1359,6 +1362,7 @@ html {
   .guest__social-list {
     width: 38%;
     justify-content: space-between;
+    margin-bottom: 8px;
   }
 
   .guest__social-link {
@@ -1391,7 +1395,7 @@ html {
     font-size: 16px;
     line-height: 180%;
     color: var(--grey-dk);
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   .guest__btn {
@@ -1470,7 +1474,7 @@ html {
 
   .playlist__subtitle {
     display: inline-block;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
@@ -1483,7 +1487,6 @@ html {
     font-size: 20px;
     line-height: 20px;
     color: var(--black);
-    cursor: pointer;
   }
 
   .playlist__check-item:not(:last-child) {
@@ -1587,6 +1590,7 @@ html {
   .playlist__list {
     justify-content: space-between;
     row-gap: 30px;
+    padding-top: 5px;
   }
 
   .playlist__item {
@@ -1944,7 +1948,7 @@ html {
   .about__button-prev::before {
     content: "";
     position: absolute;
-    bottom: 102px;
+    bottom: 106px;
     right: 52px;
     width: 48px;
     height: 48px;
@@ -1955,7 +1959,7 @@ html {
   .about__button-next::before {
     content: "";
     position: absolute;
-    bottom: 102px;
+    bottom: 106px;
     left: 52px;
     width: 48px;
     height: 48px;
@@ -1969,7 +1973,7 @@ html {
 
   .about__form-input {
     max-width: 920px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     justify-content: space-between;
   }
 
@@ -2325,13 +2329,13 @@ html {
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    color: var(--white);
+    color: var(--main);
     outline: none;
     transition: color 0.3s ease-in-out;
   }
 
   .graph-modal__reg:hover {
-    color: var(--main);
+    color: var(--main-lt);
     transition: color 0.3s ease-in-out;
   }
 
