@@ -1462,12 +1462,13 @@
 
     .about__slide-top {
         margin-bottom: 7px;
+        max-width: 113px;
     }
 
     .about__name {
         font-size: 14px;
         line-height: 18px;
-        max-width: 90%;
+        max-width: 89%;
         margin-bottom: 4px;
     }
 
