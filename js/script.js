@@ -148,7 +148,7 @@ menuLinksBottom.forEach(function (element) {
   });
 });
 
-var selector = document.querySelector(".about__form-box");
+var selector = document.querySelector(".mail-box");
 var im = new Inputmask("*@*.a");
 
 im.mask(selector);
