@@ -66,7 +66,6 @@ const swiper = new Swiper('.about__swiper', {
 
     256: {
       slidesPerView: 2,
-      spaceBetween: 12,
     },
   },
 
@@ -96,10 +95,15 @@ podcastPlay.forEach(function (el) {
   });
 });
 
+/* document.querySelector('.header__top-search').addEventListener('submit', function (e) {
+  e.preventDefault();
+}); */
+
 let searchBtn = document.querySelector('.header__top-search');
 let searchInput = document.querySelector('.header__top-input');
 
-searchBtn.addEventListener('click', function () {
+searchBtn.addEventListener('click', function (e) {
+  e.preventDefault();
   searchInput.classList.toggle('header__top-input--active');
 });
 
@@ -144,7 +148,7 @@ menuLinksBottom.forEach(function (element) {
   });
 });
 
-var selector = document.querySelector("input[inputmode='email']");
+var selector = document.querySelector(".about__form-box");
 var im = new Inputmask("*@*.a");
 
 im.mask(selector);
@@ -210,14 +214,27 @@ document.querySelector('.header__top-enter').addEventListener('click', () => {
 
 document.querySelector('.btn-center').addEventListener('click', function () {
   document.querySelector('.btn-center').classList.toggle('btn-center--active')
+  document.querySelector('.header__bottom').classList.toggle('header__bottom--active')
   document.querySelector('.btn-left').classList.toggle('btn-left--active')
   document.querySelector('.btn-right').classList.toggle('btn-right--active')
 });
 
-let playBtn = document.querySelectorAll('.playlist__label');
+let playBtn = document.querySelectorAll('.playlist__mark');
 playBtn.forEach(function (el) {
   el.addEventListener('click', function () {
     playBtn.forEach(el => {
+      if (el != this) {
+        el.classList.remove('playlist__mark--active')
+      };
+    });
+    this.classList.add('playlist__mark--active');
+  });
+});
+
+let playLabel = document.querySelectorAll('.playlist__label');
+playLabel.forEach(function (el) {
+  el.addEventListener('click', function () {
+    playLabel.forEach(el => {
       if (el != this) {
         el.classList.remove('playlist__label--active')
       };
@@ -225,3 +242,5 @@ playBtn.forEach(function (el) {
     this.classList.add('playlist__label--active');
   });
 });
+
+

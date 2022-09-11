@@ -65,10 +65,6 @@
         max-width: 503px;
     }
 
-    .broadcast__list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .broadcast__item-bg {
         background-size: cover;
     }
@@ -160,6 +156,14 @@
         max-width: 396px;
     }
 
+    .broadcast__content {
+        padding-top: 11px;
+    }
+
+    .broadcast__item {
+        width: calc((100% - 30px) / 2);
+    }
+
     .broadcast__item-descr {
         padding: 20px 14px;
     }
@@ -199,7 +203,7 @@
     }
 
     .playlist__subtitle {
-        margin-bottom: 7px;
+        margin-bottom: 10px;
     }
 
     .playlist__check {
@@ -211,7 +215,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         max-height: 192px;
-        max-width: 527px;
+        max-width: 517px;
     }
 
     .playlist__check-item {
@@ -329,12 +333,12 @@
     }
 
     .about__button-prev::before {
-        bottom: 63px;
+        bottom: 65px;
         right: 42px;
     }
 
     .about__button-next::before {
-        bottom: 63px;
+        bottom: 65px;
         left: 42px;
     }
 
@@ -362,6 +366,7 @@
 
     .about__btn {
         padding: 23px 52px;
+        margin-bottom: 31px;
     }
 }
 
@@ -455,10 +460,11 @@
     .header__top-nav-list--active {
         visibility: visible;
         transform: none;
-        padding: 105px 114px;
+        padding: 110px;
+        padding-bottom: 95px;
         padding-right: 383px;
-        background: url(../img/Burger_bg-1.png) 415px bottom no-repeat,
-                    url(../img/Burger_bg-2.png) 558px top no-repeat;
+        background: url(../img/Burger_bg-1.png) 403px bottom no-repeat,
+                    url(../img/Burger_bg-2.png) 548px top no-repeat;
         background-color: var(--grey);
         height: 400px;
         display: block;
@@ -602,7 +608,12 @@
 
     .playlist__label {
         margin-bottom: 30px;
-        margin-right: 30px;
+        margin-right: 22px;
+    }
+
+    .playlist__card-top {
+        min-width: unset;
+        max-width: 113px;
     }
 
     .container.promo__container {
@@ -665,11 +676,11 @@
     }
 
     .about__button-prev::before {
-        bottom: 54px;
+        bottom: 51px;
     }
 
     .about__button-next::before {
-        bottom: 54px;
+        bottom: 51px;
     }
 
     .about__middle {
@@ -731,6 +742,15 @@
 @media (max-width: 710px) {
     .container {
         max-width: 286px;
+    }
+
+    .container.header__bottom-container {
+        position: relative;
+    }
+
+    .header__bottom--active {
+        background-color: var(--grey-lt);
+        transition: background-color 0.3s ease-in-out;
     }
 
     .section-subtitle {
@@ -795,7 +815,7 @@
         position: absolute;
         visibility: hidden;
         opacity: 0;
-        top: 281px;
+        top: 175px;
         flex-direction: column;
         transform: translateX(-100%);
         width: 0;
@@ -806,14 +826,14 @@
 
     .header__bottom-nav-list--active {
         display: block;
-        width: 286px;
+        width: 100%;
         height: 168px;
-        left: 17px;
+        left: 0;
         padding: 29px 0 0 21px;
         visibility: visible;
         opacity: 1;
         transform: none;
-        background-color: var(--grey-lt);
+        background-color: var(--white);
         columns: 2;
         column-gap: 22px;
         transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
@@ -848,7 +868,7 @@
         top: 42px;
         max-width: 128px;
         min-height: 75px;
-        background-color: var(--grey-lt);
+        background-color: var(--white);
         visibility: hidden;
         opacity: 0;
         transform: translateY(-100%);
@@ -876,7 +896,7 @@
         min-height: 75px;
         border-right: none;
         border-left: 1px solid var(--grey);
-        background-color: var(--grey-lt);
+        background-color: var(--white);
         visibility: hidden;
         opacity: 0;
         transform: translateY(-100%);
@@ -964,6 +984,10 @@
         transition: color 0.3s ease-in-out;
     }
 
+    .btn-center--active.header__bottom-container {
+        background-color: var(--grey-lt);
+    }
+
     .btn-left--active {
         opacity: 1;
         transform: translateY(0);
@@ -1030,7 +1054,6 @@
     }
 
     .podcast__item-right {
-        max-height: 113px;
         padding: 0;
     }
 
@@ -1132,7 +1155,7 @@
     }
 
     .broadcast__item-descr {
-        padding: 10px 8px;
+        padding: 9px 8px;
         min-height: 99px;
         display: flex;
         flex-direction: column;
@@ -1147,6 +1170,11 @@
     .broadcast__link {
         font-size: 12px;
         line-height: 12px;
+        color: var(--main);
+    }
+
+    .broadcast__link path {
+        fill: var(--main);
     }
 
     .broadcast__archive {

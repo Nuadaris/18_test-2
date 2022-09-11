@@ -557,6 +557,8 @@ html {
   }
 
   .podcast__card {
+    display: flex;
+    flex: 1 1 auto;
     padding-left: 0;
     padding-right: 0;
     max-width: 540px;
@@ -564,10 +566,16 @@ html {
     background-color: var(--white);
   }
 
+  .podcast__item {
+    flex: 1 1 auto;
+    max-width: 540px;
+    width: 100%;
+  }
+
   .podcast__item-play {
     outline: none;
     width: 48px;
-    height: 60px;
+    height: 48px;
   }
 
   .podcast__item-play circle {
@@ -666,7 +674,9 @@ html {
   }
 
   .podcast__item-right {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   .podcast__item-right-top {
@@ -739,6 +749,8 @@ html {
     line-height: 16px;
     color: var(--grey-dk);
     transition: color 0.3s ease-in-out;
+    outline: none;
+    cursor: pointer;
   }
 
   .podcast__item-use path,
@@ -755,6 +767,16 @@ html {
 
   .podcast__item-use:hover path {
     fill: var(--main);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .podcast__item-use:focus-visible {
+    color: var(--main-lt);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .podcast__item-use:focus-visible path {
+    fill: var(--main-lt);
     transition: fill 0.3s ease-in-out;
   }
 
@@ -778,6 +800,16 @@ html {
     transition: fill 0.3s ease-in-out;
   }
 
+  .podcast__item-like:focus-visible {
+    color: var(--main-lt);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .podcast__item-like:focus-visible path {
+    fill: var(--main-lt);
+    transition: fill 0.3s ease-in-out;
+  }
+
   .podcast__item-like:active {
     color: var(--main-dk);
     transition: color 0.3s ease-in-out;
@@ -795,6 +827,16 @@ html {
 
   .podcast__item-share:hover path {
     fill: var(--main);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .podcast__item-share:focus-visible {
+    color: var(--main-lt);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .podcast__item-share:focus-visible path {
+    fill: var(--main-lt);
     transition: fill 0.3s ease-in-out;
   }
 
@@ -984,11 +1026,21 @@ html {
 
   .broadcast__content {
     width: 100%;
-    padding-top: 12px;
+    padding-top: 15px;
+  }
+
+  .broadcast__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 25px;
   }
 
   .broadcast__item {
     position: relative;
+    width: calc((100% - 60px) / 3);
+    display: flex;
+    flex-direction: column;
   }
 
   .broadcast__item-bg {
@@ -1038,14 +1090,10 @@ html {
     min-height: 148px;
   }
 
-  .broadcast__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    row-gap: 25px;
-  }
-
   .broadcast__item-descr {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 20px 16px;
     border: 1px solid var(--grey-lt);
   }
@@ -1059,10 +1107,11 @@ html {
     font-size: 12px;
     line-height: 12px;
     color: var(--grey-dk);
-    margin-bottom: 20px;
+    margin-bottom: auto;
   }
 
   .broadcast__link {
+    align-self: flex-start;
     font-style: italic;
     font-weight: 400;
     font-size: 16px;
@@ -1070,6 +1119,7 @@ html {
     color: var(--black);
     outline: none;
     padding: 2px;
+    margin-top: 18px;
     background-color: transparent;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
@@ -1425,6 +1475,11 @@ html {
     transition: color 0.3s ease-in-out;
   }
 
+  .guest__btn--active {
+    color: var(--main-dk);
+    transition: color 0.3s ease-in-out;
+  }
+
   .guest__visit {
     font-weight: 500;
     font-size: 16px;
@@ -1498,6 +1553,10 @@ html {
     cursor: pointer;
   }
 
+  .playlist__mark--active.playlist__mark::after {
+    opacity: 1;
+  }
+
   .playlist__input {
     position: absolute;
     height: 0;
@@ -1552,10 +1611,10 @@ html {
     transition: stroke 0.3s ease-in-out;
   }
 
-  .playlist__input:checked ~ .playlist__mark::after {
+  /*.playlist__input:checked ~ .playlist__mark::after {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-  }
+  }*/
 
     .playlist__descr {
     position: absolute;
@@ -1588,15 +1647,18 @@ html {
   }
 
   .playlist__list {
-    justify-content: space-between;
-    row-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     padding-top: 5px;
   }
 
   .playlist__item {
     padding-left: 0;
     padding-right: 0;
+    width: calc((100% - 90px) / 4);
     max-width: 160px;
+    display: flex;
   }
 
   .playlist__card {
@@ -1606,7 +1668,9 @@ html {
   }
 
   .playlist__card-top {
+    position: relative;
     max-height: 160px;
+    width: 100%;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
   }
@@ -1616,14 +1680,14 @@ html {
     content: "";
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 28%;
+    width: 100%;
+    height: 100%;
     background: var(--black);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
 
-  .playlist__card::before {
+  .playlist__card-top::before {
     position: absolute;
     content: "";
     top: 0;
