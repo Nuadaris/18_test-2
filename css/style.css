@@ -662,7 +662,7 @@ html {
     font-size: 10px;
     line-height: 10px;
     text-align: center;
-    padding: 3px 8.5px;
+    padding: 5px;
     color: var(--black);
     background-color: #E6E8EC;
   }
@@ -684,17 +684,18 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 24px 30px;
-    padding-bottom: 24px;
+    padding-bottom: 23px;
     margin-bottom: 9px;
     border-bottom: 1px solid var(--grey-lt);
   }
 
   .podcast__item-time {
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     color: var(--black);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .podcast__item-name {
@@ -1445,7 +1446,7 @@ html {
     font-size: 16px;
     line-height: 180%;
     color: var(--grey-dk);
-    margin-bottom: 27px;
+    margin-bottom: 38px;
   }
 
   .guest__btn {
@@ -1542,6 +1543,9 @@ html {
     font-size: 20px;
     line-height: 20px;
     color: var(--black);
+    min-height: 30px;
+    display: block;
+    text-align: center;
   }
 
   .playlist__check-item:not(:last-child) {
@@ -1555,6 +1559,7 @@ html {
 
   .playlist__mark--active.playlist__mark::after {
     opacity: 1;
+
   }
 
   .playlist__input {
@@ -1565,17 +1570,21 @@ html {
   }
 
   .playlist__mark {
-    position: relative;
-    max-height: 30px;
-    margin-right: 12px;
+    min-height: 30px;
+    padding-left: 42px;
     outline: none;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../img/Check_default.png);
+    background-repeat: no-repeat;
+    background-position: left center;
   }
 
-  .playlist__mark::after {
+  /*.playlist__mark::after {
     position: absolute;
     content: "";
-    left: 30%;
-    right: 30%;
+    left: 9px;
+    right: 94%;
     top: 30%;
     bottom: 30%;
     border-radius: 50%;
@@ -1584,11 +1593,12 @@ html {
     box-shadow: 0px 0px 5px rgba(30, 13, 68, 0.8);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-  }
+  }*/
 
   .playlist__mark svg {
     fill: var(--white);
     transition: fill 0.3s ease-in-out;
+    margin-right: 12px;
   }
 
   .playlist__mark:focus-visible svg {
@@ -1601,20 +1611,20 @@ html {
     transition: stroke 0.3s ease-in-out, stroke-width 0.3s ease-in-out;
   }
 
-  .playlist__label:hover .playlist__mark circle {
-    stroke: var(--main);
-    transition: stroke 0.3s ease-in-out;
+  .playlist__mark:hover {
+    background-image: url(../img/Check_hov.png);
+    background-repeat: no-repeat;
   }
 
-  .playlist__mark:focus-visible circle {
-    stroke: var(--main);
-    transition: stroke 0.3s ease-in-out;
+  .playlist__mark:focus-visible {
+    background-image: url(../img/Check_focus.png);
+    background-repeat: no-repeat;
   }
 
-  /*.playlist__input:checked ~ .playlist__mark::after {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-  }*/
+  .playlist__input:checked + .playlist__mark--active {
+    background-image: url(../img/Check_active.png);
+    background-repeat: no-repeat;
+  }
 
     .playlist__descr {
     position: absolute;
@@ -1665,6 +1675,8 @@ html {
     position: relative;
     outline: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
   }
 
   .playlist__card-top {
@@ -1722,8 +1734,11 @@ html {
   }
 
   .playlist__card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 15px 16px;
-    padding-bottom: 12px;
+    padding-bottom: 18px;
     border: 1px solid var(--grey-lt);
     background-color: transparent;
     transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
@@ -1872,6 +1887,7 @@ html {
   }
 
   .promo__btn {
+    display: inline-flex;
     background-color: transparent;
     border: 2px solid var(--sand);
     font-weight: 500;

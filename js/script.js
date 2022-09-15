@@ -102,9 +102,14 @@ podcastPlay.forEach(function (el) {
 let searchBtn = document.querySelector('.header__top-search');
 let searchInput = document.querySelector('.header__top-input');
 
-searchBtn.addEventListener('click', function (e) {
-  e.preventDefault();
+searchBtn.addEventListener('click', function () {
   searchInput.classList.toggle('header__top-input--active');
+  if (searchBtn.getAttribute("type") === "submit") {
+    searchBtn.setAttribute("type", "button");
+    }
+    else {
+      searchBtn.setAttribute("type", "submit" );
+    }
 });
 
 let burger = document.querySelector('.burger');
