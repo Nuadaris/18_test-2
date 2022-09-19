@@ -1365,6 +1365,15 @@
         background-image: none;
     }
 
+    .playlist__input:checked ~ .playlist__mark {
+        background-image: none;
+    }
+
+    /* .playlist__input:checked ~ .playlist__label {
+        background-color: var(--main);
+        color: var(--white);
+    } */
+
     .playlist__content {
         padding-top: 0;
         margin-bottom: 32px;

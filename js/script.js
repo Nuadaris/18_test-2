@@ -224,7 +224,7 @@ document.querySelector('.btn-center').addEventListener('click', function () {
   document.querySelector('.btn-right').classList.toggle('btn-right--active')
 });
 
-let playBtn = document.querySelectorAll('.playlist__mark');
+/* let playBtn = document.querySelectorAll('.playlist__mark');
 playBtn.forEach(function (el) {
   el.addEventListener('click', function () {
     playBtn.forEach(el => {
@@ -234,7 +234,7 @@ playBtn.forEach(function (el) {
     });
     this.classList.add('playlist__mark--active');
   });
-});
+}); */
 
 let playLabel = document.querySelectorAll('.playlist__label');
 playLabel.forEach(function (el) {

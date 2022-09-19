@@ -1569,6 +1569,11 @@ html {
     opacity: 0;
   }
 
+  .playlist__input:focus-visible ~ .playlist__mark {
+    background-image: url(../img/Check_focus.png);
+    background-repeat: no-repeat;
+  }
+
   .playlist__mark {
     min-height: 30px;
     padding-left: 42px;
@@ -1616,12 +1621,12 @@ html {
     background-repeat: no-repeat;
   }
 
-  .playlist__mark:focus-visible {
+  /* .playlist__mark:focus-visible {
     background-image: url(../img/Check_focus.png);
     background-repeat: no-repeat;
-  }
+  } */
 
-  .playlist__input:checked + .playlist__mark--active {
+  .playlist__input:checked ~ .playlist__mark {
     background-image: url(../img/Check_active.png);
     background-repeat: no-repeat;
   }
