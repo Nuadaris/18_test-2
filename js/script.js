@@ -178,6 +178,23 @@ const validate = new window.JustValidate('#about__form');
 const validation = new JustValidate('#about__form');
 
 validation
+  .addField('#textarea', [
+    {
+      rule: 'required',
+      errorMessage: 'Нам важно Ваше мнение',
+    },
+    {
+      rule: 'customRegexp',
+      value: "[a-zA-Zа-яА-Я]",
+      errorMessage: 'Недопустимые символы',
+    },
+    {
+      rule: 'minLength',
+      value: 15,
+      errorMessage: 'И это всё?',
+    },
+])
+
   .addField('#name', [
     {
       rule: 'required',

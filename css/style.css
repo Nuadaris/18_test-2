@@ -1,3 +1,20 @@
+:root {
+  --white: #fff;
+  --white-lt: #F5F6F7;
+  --main-lt: #AA9DFA;
+  --main: #6D31EE;
+  --main-dk: #4F28A5;
+  --red: #D52B1E;
+  --blue: #0039A6;
+  --sand: #F0D288;
+  --sand-dk: #BB973E;
+  --grey-lt: #E6E8EC;
+  --grey: #D2D5DD;
+  --grey-dk: #A1A6B4;
+  --black-lt: #292E39;
+  --black: #121723;
+}
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -126,24 +143,7 @@ html {
     font-display: swap;
   }
 
-  :root {
-    --white: #fff;
-    --white-lt: #F5F6F7;
-    --main-lt: #AA9DFA;
-    --main: #6D31EE;
-    --main-dk: #4F28A5;
-    --red: #D52B1E;
-    --blue: #0039A6;
-    --sand: #F0D288;
-    --sand-dk: #BB973E;
-    --grey-lt: #E6E8EC;
-    --grey: #D2D5DD;
-    --grey-dk: #A1A6B4;
-    --black-lt: #292E39;
-    --black: #121723;
-  }
-
-  .burger {
+    .burger {
     display: none;
   }
 
@@ -2062,6 +2062,10 @@ html {
     justify-content: space-between;
   }
 
+  .textarea-input{
+    position: relative;
+  }
+
   .about__textarea-box {
     resize: none;
     width: 100%;
@@ -2094,6 +2098,12 @@ html {
     background-color: transparent;
     border: 1px solid var(--white);
     transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .about__textarea .just-validate-error-label {
+    position: absolute;
+    top: 7%;
+    left: 4%;
   }
 
   .about__form-label {
@@ -2244,6 +2254,10 @@ html {
 
   .footer__top-left svg {
     margin-bottom: 14px;
+  }
+
+  .footer__top-left-item svg {
+    margin-bottom: 0;
   }
 
   .footer__top-left-list {

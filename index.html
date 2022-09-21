@@ -8,6 +8,7 @@
   <title>Радио W-Wawe</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="preload" href="fonts/MullerRegular.woff2">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/choices.css">
@@ -1618,64 +1619,64 @@
           <form class="playlist__check-block">
             <div class="playlist__check-item">
               <label class="playlist__label flex">
-                <input type="radio" class="playlist__input">
-                <span class="playlist__mark flex" tabindex="0">
+                <input type="radio" class="playlist__input" name="playlist__input">
+                <span class="playlist__mark flex">
                   Постпанк
                 </span>
               </label>
             </div>
             <div class="playlist__check-item">
               <label class="playlist__label flex">
-                <input type="radio" class="playlist__input">
-                <span class="playlist__mark flex" tabindex="0">
+                <input type="radio" class="playlist__input" name="playlist__input">
+                <span class="playlist__mark flex">
                   Хардкор
                 </span>
               </label>
             </div>
             <div class="playlist__check-item">
               <label class="playlist__label flex">
-                <input type="radio" class="playlist__input">
-                <span class="playlist__mark flex" tabindex="0">
+                <input type="radio" class="playlist__input" name="playlist__input">
+                <span class="playlist__mark flex">
                   Панк&nbsp;-&nbsp;рок
                 </span>
               </label>
             </div>
             <div class="playlist__check-item">
               <label class="playlist__label flex">
-                <input type="radio" class="playlist__input">
-                <span class="playlist__mark flex" tabindex="0">
+                <input type="radio" class="playlist__input" name="playlist__input">
+                <span class="playlist__mark flex">
                   Рок
                 </span>
               </label>
             </div>
             <div class="playlist__check-item">
               <label class="playlist__label flex">
-                <input type="radio" class="playlist__input">
-                <span class="playlist__mark flex" tabindex="0">
+                <input type="radio" class="playlist__input" name="playlist__input">
+                <span class="playlist__mark flex">
                   Прогрессивный рок
                 </span>
               </label>
             </div>
             <div class="playlist__check-item">
               <label class="playlist__label flex">
-                <input type="radio" class="playlist__input">
-                <span class="playlist__mark flex" tabindex="0">
+                <input type="radio" class="playlist__input" name="playlist__input">
+                <span class="playlist__mark flex">
                   Электронная&nbsp;музыка
                 </span>
               </label>
             </div>
             <div class="playlist__check-item">
               <label class="playlist__label flex">
-                <input type="radio" class="playlist__input">
-                <span class="playlist__mark flex" tabindex="0">
+                <input type="radio" class="playlist__input" name="playlist__input">
+                <span class="playlist__mark flex">
                   Классическая&nbsp;музыка
                 </span>
               </label>
             </div>
             <div class="playlist__check-item">
               <label class="playlist__label label-last flex">
-                <input type="radio" class="playlist__input">
-                <span class="playlist__mark flex" tabindex="0">
+                <input type="radio" class="playlist__input" name="playlist__input">
+                <span class="playlist__mark flex">
                   Звуки&nbsp;природы&nbsp;и&nbsp;шум&nbsp;города
                 </span>
               </label>
@@ -2124,7 +2125,7 @@
         <div class="about__bottom">
           <form class="about__form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" id="about__form" method="post"
             aria-label="Контактные данные">
-            <div class="about__form-input">
+            <div class="about__form-input textarea-input">
               <label class="about__textarea" for="textarea">
                 <textarea class="about__textarea-box" name="textarea" id="textarea"
                   placeholder="Что скажете?"></textarea>
@@ -2147,7 +2148,7 @@
               <label tabindex="0" class="about__form-agreement">
                 <input class="about__form-check" type="checkbox" id="about__form-check" required>Согласен
                 на&nbsp;обработку персональных данных
-                <span class="about__form-checkmark"></span>
+                <span class="about__form-checkmark" aria-required="true"></span>
               </label>
             </div>
           </form>
@@ -2301,7 +2302,7 @@
         </h3>
         <ul class="graph-modal__list list-reset flex">
           <li class="graph-modal__item">
-            <a href="#" class="graph-modal__link">
+            <a href="#" class="graph-modal__link" aria-label="Facebook">
               <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_24531_5473)">
                   <path class="fb-icon"
@@ -2317,7 +2318,7 @@
             </a>
           </li>
           <li class="graph-modal__item">
-            <a href="#" class="graph-modal__link">
+            <a href="#" class="graph-modal__link" aria-label="В Контакте">
               <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="3" y="3" width="33.33" height="33.33" rx="2" fill="#A1A6B4" />
                 <path
@@ -2327,7 +2328,7 @@
             </a>
           </li>
           <li class="graph-modal__item">
-            <a href="#" class="graph-modal__link">
+            <a href="#" class="graph-modal__link" aria-label="Google">
               <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="3" y="3" width="33.33" height="33.33" rx="2" fill="#A1A6B4" />
                 <path

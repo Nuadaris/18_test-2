@@ -1144,6 +1144,7 @@
 
     .broadcast__author {
         margin-bottom: 29px;
+        max-width: 100%;
     }
 
     .broadcast__content {
